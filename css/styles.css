@@ -684,14 +684,23 @@ background-color: var(--pressed-state-color);
     display: block;
     top: 24px;
     right: 24px;
-    fill: var(--accent-color);
     cursor: pointer;
-    border-color: transparent;
-    background-color: transparent;
+
+    border-radius: 50%;
+    border-color: var(--accent-color);
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close {
+    fill: #000000;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    border-color: var(--pressed-state-color);
+}
+
+.modal-close-btn:hover .modal-close,
+.modal-close-btn:focus .modal-close {
     fill: var(--pressed-state-color);
 }
 
@@ -783,6 +792,7 @@ background-color: var(--pressed-state-color);
     line-height: 1.5;
 
     padding-left: 16px;
+    padding-top: 8px;
 }
 
 .callback-comment:focus {
