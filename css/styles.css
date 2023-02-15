@@ -687,7 +687,7 @@ background-color: var(--pressed-state-color);
     cursor: pointer;
 
     border-radius: 50%;
-    border-color: var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-close {
